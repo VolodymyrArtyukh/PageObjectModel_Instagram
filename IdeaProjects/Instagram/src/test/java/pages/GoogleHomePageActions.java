@@ -26,7 +26,7 @@ public class GoogleHomePageActions extends GoogleHomePage
     public void enterSearchDataAndClickSearchButton(String data)
     {
         driver.findElement(searchField).sendKeys(data);
-        driver.findElement(searchButton).sendKeys(Keys.ENTER);
+        driver.findElement(searchButton).click();
     }
 
 
