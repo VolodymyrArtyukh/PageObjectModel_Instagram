@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.openqa.selenium.WebElement;
 
 public class InstagramLogInPage extends GoogleHomePage
 {
@@ -26,9 +26,17 @@ public class InstagramLogInPage extends GoogleHomePage
 
     public void assertingThatWeHaveLoggedIn()
     {
-        driver.findElement(instgramLogoLink);
+       String instagramLogoLink = "Instagram";
+       WebElement instagramLogo = driver.findElement(By.linkText(instagramLogoLink));       
 
-        Assert.assertEquals(instgramLogoLink,instgramLogoLink);
-    }
+       if (instagramLogo.isDisplayed())                     
+       {
+           System.out.println("You have successfully logged to your instagram home page");
+       }
+       else
+       {
+           System.out.println("You haven't entered wrong credentials");}
+       }
+    }   
 
 }
