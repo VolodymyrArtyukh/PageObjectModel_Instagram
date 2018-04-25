@@ -11,7 +11,7 @@ import pages.*;
 */
 public class InstagramTestSuccess extends BaseTest
 {
-    @Test(priority = 1)
+    @Test
     public void successfullyLoggedInstgramUser()
     {
         GoogleHomePage googleHomePage = new GoogleHomePage(driver);
