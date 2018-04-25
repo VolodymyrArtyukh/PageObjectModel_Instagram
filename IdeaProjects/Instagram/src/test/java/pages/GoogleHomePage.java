@@ -20,10 +20,8 @@ public class GoogleHomePage
 
     public void goToGoogleHomePage()
     {
-
-        String homePage = "http://www.google.com";
+	String homePage = "http://www.google.com";
         driver.get(homePage);
-
     }
 
 }
