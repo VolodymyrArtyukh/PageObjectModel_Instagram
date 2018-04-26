@@ -21,8 +21,6 @@ public class GoogleHomePageActions extends GoogleHomePage
      By searchField = By.id("lst-ib");
      By searchButton = By.name("btnK");
 
-
-
     public void enterSearchDataAndClickSearchButton(String data)
     {
         driver.findElement(searchField).sendKeys(data);
